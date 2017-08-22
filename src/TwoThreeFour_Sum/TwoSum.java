@@ -14,13 +14,13 @@ import java.util.List;
  Because nums[0] + nums[1] = 2 + 7 = 9,
  return [0, 1].
 
- 相关博客：
+ 这种解法是最简洁的一种解法，其时间复杂度为O（1），利用HashMap的“记忆功能”
  */
 public class TwoSum {
 
     public static void main(String args[]){
         int[] nums = {2, 7, 11, 15};
-        int traget = 22;
+        int traget = 9;
         List<Integer[]> res = twoSum(nums,traget);
 
         for(int i=0; i<res.size(); i++){
@@ -39,8 +39,11 @@ public class TwoSum {
         HashMap<Integer,Integer> map = new HashMap<>();
         for(int i =0; i<numbers.length; i++){
             if(map.containsKey(traget - numbers[i])){
-                res[0] = traget - numbers[i];
+                //res[0] = traget - numbers[i];
+                //res[1] = numbers[i]
+                res[0] = map.get(traget - numbers[i]);
                 res[1] = i;
+
                 result.add(res);
             }
             map.put(numbers[i] , i);

@@ -4,6 +4,19 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+ You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+ Example:
+ Given nums = [2, 7, 11, 15], target = 22,
+
+ Because nums[1] + nums[3] = 7 + 15 = 9,
+ return [1, 3].
+
+ 这种解法是次优解，时间复杂度为O(N)
+ */
+
 public class TowSumII {
     public static void main(String args[]){
         int[] nums = {2, 7, 11, 15};
@@ -26,9 +39,10 @@ public class TowSumII {
         while(start < end){
             if((nums[start] +nums[end]) == traget){
 
-                list.add(Arrays.asList(nums[start],nums[end]));
-                ++ start;       //没有这两句就没办法跳出这个if语句，毕竟已经等于traget
-                -- end;         //了，只有如果不自减一次永远不会出现下面两个分支中的情况
+                //list.add(Arrays.asList(nums[start],nums[end]));
+                list.add(Arrays.asList(start,end));
+                ++ start;    //没有这两句就没办法跳出这个if语句，毕竟已经等于traget
+                -- end;      //了，只有如果不自减一次永远不会出现下面两个分支中的情况
             }else if(nums[start]+ nums[end] < traget){
                 start++;
             }else {
