@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67edc53b-4061-4242-986c-9de3de8dd3d4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/TwoThreeFour_Sum/TowSumII.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/TwoThreeFour_Sum/TowSumII.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/TwoThreeFour_Sum/TwoSum.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/TwoThreeFour_Sum/TwoSum.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sum/ThreeSum/ThreeSum.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TwoThreeFour_Sum/TowSumII.java" afterPath="$PROJECT_DIR$/src/TwoThreeFour_Sum/TowSumII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TwoThreeFour_Sum/TwoSum.java" afterPath="$PROJECT_DIR$/src/TwoThreeFour_Sum/TwoSum.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TwoThreeFour_Sum/TowSumII.java" afterPath="$PROJECT_DIR$/src/Sum/TowSum/TowSumII.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TwoThreeFour_Sum/TwoSum.java" afterPath="$PROJECT_DIR$/src/Sum/TowSum/TwoSum.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,10 +19,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="TwoSum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TwoThreeFour_Sum/TwoSum.java">
+        <entry file="file://$PROJECT_DIR$/src/Sum/TowSum/TwoSum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="207">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,11 +30,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TowSumII.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/TwoThreeFour_Sum/TowSumII.java">
+      <file leaf-file-name="ThreeSum.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Sum/ThreeSum/ThreeSum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state relative-caret-position="682">
+              <caret line="70" column="8" lean-forward="false" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TowSumII.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Sum/TowSum/TowSumII.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="774">
+              <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,7 +57,7 @@
       <file leaf-file-name="Arrays.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/util/Arrays.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-775">
+            <state relative-caret-position="84893">
               <caret line="3762" column="32" lean-forward="false" selection-start-line="3762" selection-start-column="32" selection-end-line="3762" selection-end-column="32" />
               <folding>
                 <element signature="e#177013#177014#0" expanded="true" />
@@ -58,7 +70,7 @@
       <file leaf-file-name="System.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/lang/System.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
+            <state relative-caret-position="10074">
               <caret line="480" column="29" lean-forward="false" selection-start-line="480" selection-start-column="29" selection-end-line="480" selection-end-column="29" />
               <folding />
             </state>
@@ -87,6 +99,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/TwoThreeFour_Sum/TwoSum.java" />
         <option value="$PROJECT_DIR$/src/TwoThreeFour_Sum/TowSumII.java" />
+        <option value="$PROJECT_DIR$/src/TwoThreeFour_Sum/ThreeSum/TowSumII.java" />
+        <option value="$PROJECT_DIR$/src/TwoThreeFour_Sum/ThreeSum/TwoSum.java" />
+        <option value="$PROJECT_DIR$/src/TwoThreeFour_Sum/TowSum/TwoSum.java" />
+        <option value="$PROJECT_DIR$/src/TwoThreeFour_Sum/TowSum/TowSumII.java" />
+        <option value="$PROJECT_DIR$/src/Sum/TowSum/TowSumII.java" />
+        <option value="$PROJECT_DIR$/src/Sum/ThreeSum/ThreeSum.java" />
       </list>
     </option>
   </component>
@@ -113,6 +131,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,15 +148,21 @@
               <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="TwoThreeFour_Sum" type="462c0819:PsiDirectoryNode" />
+              <item name="Sum" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Sum" type="462c0819:PsiDirectoryNode" />
+              <item name="TowSum" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,15 +182,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TowSumII">
-    <configuration name="TowSumII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.ThreeSum">
+    <configuration name="ThreeSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="TwoThreeFour_Sum.*" />
+          <option name="PATTERN" value="Sum.ThreeSum.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="TwoThreeFour_Sum.TowSumII" />
+      <option name="MAIN_CLASS_NAME" value="Sum.ThreeSum.ThreeSum" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="LeetCode" />
+      <envs />
+    </configuration>
+    <configuration name="TowSumII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Sum.TowSum.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Sum.TowSum.TowSumII" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -180,11 +224,11 @@
     <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="TwoThreeFour_Sum.*" />
+          <option name="PATTERN" value="Sum.TowSum.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="TwoThreeFour_Sum.TwoSum" />
+      <option name="MAIN_CLASS_NAME" value="Sum.TowSum.TwoSum" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -277,14 +321,16 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.TwoSum" />
       <item index="1" class="java.lang.String" itemvalue="Application.TowSumII" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ThreeSum" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.TowSumII" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TwoSum" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.ThreeSum" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TowSumII" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TwoSum" />
       </list>
     </recent_temporary>
   </component>
@@ -318,7 +364,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.319206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19152361" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -341,7 +387,46 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/TwoThreeFour_Sum/TwoSum.java">
+    <entry file="file://$PROJECT_DIR$/src/Sum/TowSum/TwoSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sum/TowSum/TowSumII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86526">
+          <caret line="3762" column="32" lean-forward="false" selection-start-line="3762" selection-start-column="32" selection-end-line="3762" selection-end-column="32" />
+          <folding>
+            <element signature="e#177013#177014#0" expanded="true" />
+            <element signature="e#177054#177055#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10074">
+          <caret line="480" column="29" lean-forward="false" selection-start-line="480" selection-start-column="29" selection-end-line="480" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sum/TowSum/TwoSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -353,7 +438,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
+        <state relative-caret-position="10074">
           <caret line="480" column="29" lean-forward="false" selection-start-line="480" selection-start-column="29" selection-end-line="480" selection-end-column="29" />
           <folding />
         </state>
@@ -361,7 +446,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-775">
+        <state relative-caret-position="84893">
           <caret line="3762" column="32" lean-forward="false" selection-start-line="3762" selection-start-column="32" selection-end-line="3762" selection-end-column="32" />
           <folding>
             <element signature="e#177013#177014#0" expanded="true" />
@@ -370,20 +455,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TwoThreeFour_Sum/TwoSum.java">
+    <entry file="file://$PROJECT_DIR$/src/Sum/TowSum/TwoSum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        <state relative-caret-position="207">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TwoThreeFour_Sum/TowSumII.java">
+    <entry file="file://$PROJECT_DIR$/src/Sum/TowSum/TowSumII.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        <state relative-caret-position="774">
+          <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sum/ThreeSum/ThreeSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="70" column="8" lean-forward="false" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

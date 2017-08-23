@@ -1,4 +1,4 @@
-package TwoThreeFour_Sum;
+package Sum.TowSum;
 
 import java.util.ArrayList;
 import java.util.HashMap;

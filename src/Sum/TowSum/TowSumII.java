@@ -1,4 +1,4 @@
-package TwoThreeFour_Sum;
+package Sum.TowSum;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,7 +14,8 @@ import java.util.List;
  Because nums[1] + nums[3] = 7 + 15 = 9,
  return [1, 3].
 
- 这种解法是次优解，时间复杂度为O(N)
+ 这种解法是次优解，时间复杂度为O(N),主要步骤：1.排序 2.前后指针逼近目标值，之所以要说这中次优解，是因为之后的ThreeSum和FourSum
+ 问题中会有HashMap不能解决的问题~~只能用这种方法
  */
 
 public class TowSumII {
@@ -34,8 +35,8 @@ public class TowSumII {
         int end =nums.length-1;
 
         List<List<Integer>> list = new ArrayList<>();
-
         Arrays.sort(nums);
+
         while(start < end){
             if((nums[start] +nums[end]) == traget){
 
