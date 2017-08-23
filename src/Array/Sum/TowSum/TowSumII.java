@@ -1,4 +1,4 @@
-package Sum.TowSum;
+package Array.Sum.TowSum;
 
 import java.util.ArrayList;
 import java.util.Arrays;

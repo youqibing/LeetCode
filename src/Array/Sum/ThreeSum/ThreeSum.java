@@ -1,6 +1,4 @@
-package Sum.ThreeSum;
-
-import sun.rmi.runtime.Log;
+package Array.Sum.ThreeSum;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -33,23 +31,30 @@ public class ThreeSum {
         int traget = 0;
 
         List<List<Integer>> lists = threeSum(nums , traget);
-        for(int i=0; i<lists.size(); i++){
-            List<Integer> res = lists.get(i);
-            System.out.println(res.get(0)+" "+res.get(1)+ " "+res.get(2));
+        for (List<Integer> res : lists) {
+            System.out.println(res.get(0) + " " + res.get(1) + " " + res.get(2));
         }
     }
 
-    public static List<List<Integer>> threeSum(int[] numbers,int trager){
+    private static List<List<Integer>> threeSum(int[] numbers,int trager){
         List<List<Integer>> lists = new ArrayList<>();
-        Arrays.sort(numbers);
+        Arrays.sort(numbers);  // -4，-1，-1，0, 1, 2
 
-        for(int left =0; left <numbers.length && numbers[left]<=0; left++){
+        for(int left =0; left <numbers.length -3 && numbers[left]<=0; left++){
             int mid = left+1, right = numbers.length-1;
+
+            if(left >0 && numbers[left] == numbers[left-1] )
+                continue;
 
             while(mid <right){
                 int temp = trager - numbers[left];
-                if(left >0 && numbers[left] == numbers[left-1]) //left左标去重
-                    continue;
+                //if(left >0 && numbers[left] == numbers[left-1])   //left去重不能放在这里，因为left去重的目的是为了让left重复时不
+                //    continue;       //进入下面这个while循环，此时mid和right就没有必要判断了. 如果放在这里，结果就是当left=1，即第一个
+                                //-1对应循环时,left=1,mid=2,right=5, temp =1, 在while循环中会将两个正确解确定出来[-1, 0, 1],[-1, -1, 2]
+                // 然后出while之后，left++得2(对应值为第二个-1),此时mid=3,right=5,仍然进入while循环，并执行left去重判断，发现这里重复，
+                //执行continue出while循环，这时left++得3,mid=4,right=5,仍然进while()循环,temp=0,while循环中没有满足题意的解，并且会
+                //执行right--是的right=left=4,出while循环. for循环中,left++得4,mid=5,right=5,不进入while循环，在执行一个for循环，
+                //按理说，left <numbers.length -3 && numbers[left]<=0，会结束循环，但是放在这里确实会卡死程序~~迷
 
                 if((numbers[mid] + numbers[right]) == temp){
                     int temp_mid = numbers[mid];
@@ -68,7 +73,7 @@ public class ThreeSum {
                 }
             }
         }
-        
+
         return lists;
     }
 }
