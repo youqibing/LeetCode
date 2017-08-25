@@ -1,4 +1,4 @@
-package Array.Sum.ThreeSum;
+package Array.Sum;
 
 import java.util.ArrayList;
 import java.util.Arrays;

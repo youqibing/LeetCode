@@ -1,4 +1,4 @@
-package Array.Sum.TowSum;
+package Array.Sum;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,7 +18,7 @@ import java.util.List;
  问题中会有HashMap不能解决的问题~~只能用这种方法
  */
 
-public class TowSumII {
+public class TwoSumII {
     public static void main(String args[]){
         int[] nums = {2, 7, 11, 15};
         int traget = 22;

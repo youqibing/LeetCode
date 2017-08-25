@@ -1,4 +1,4 @@
-package Array.Sum.TowSum;
+package Array.Sum;
 
 import java.util.ArrayList;
 import java.util.HashMap;
