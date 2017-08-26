@@ -9,6 +9,9 @@ package Array.TowPoint.RemoveElement;
  * Given input array nums = [1,1,2],
  * Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively. It doesn't matter
  * what you leave beyond the new length.
+ *
+ * 这道题跟之前拿到同样，不能用额外的空间，只能用原数组储存，人额按用两个游标 i，j来便利并保存目标数组(Z是用来计数长度的)。比较好的一点是，
+ * 题目中给出的是排好序的数组，此时重复的数肯定是连在一起的，因此可以用numbers[i] == numbers[i-1]判断是否发生重复
  */
 public class RmElementSorted {
     public static void main(String args[]){
@@ -27,11 +30,11 @@ public class RmElementSorted {
         for(int i=0; i<numbers.length; i++){
 
             if(i!=0 && numbers[i] == numbers[i-1]){
-                numbers[j] = numbers[i];
+                numbers[j] = numbers[i];    //在这一步的时候j已经加1了
                 continue;
             }
-            numbers[j++] = numbers[i];
-            z++;
+            numbers[j++] = numbers[i];  //注意这里是先保存再j+1,设想i从1到2的过程，实际上j等于1的位置发生了一次值的覆盖
+            z++;    //用来保存数删除元素后数组的长度(因为每当重复就continue了，不执行这一句)
         }
 
         Result res = new Result(numbers,z);
