@@ -11,7 +11,7 @@ package Array.RotateProblem;
  * Hint:
  * Could you do it in-place with O(1) extra space?
  *
- * 
+ *
  */
 public class RotateArray {
     public static void main(String args[]){
@@ -23,7 +23,7 @@ public class RotateArray {
     }
 
     private static void rotateArray(int[] numbers, int k){
-        int temp,j=k;
+        int temp;
 
         for(int i=0; i<numbers.length-1; i++){
             //System.out.println("i: "+i);
@@ -32,21 +32,29 @@ public class RotateArray {
                 numbers[i] = numbers[numbers.length - k + i];
                 numbers[numbers.length - k + i] = temp;
 
+                println(numbers,i);
+
             }else {
-                for( ;j<numbers.length -1; j++){
-                    System.out.println(j);
+                for(int j=k;j<numbers.length -1-(i-k); j++){
+                    System.out.println("i: "+ i+" j: "+j);
+
                     if(numbers[j]>numbers[j+1]){
                         temp=numbers[j];
                         numbers[j]=numbers[j+1];
                         numbers[j+1]=temp;
                     }
                 }
+                println(numbers,i);
             }
-
         }
 
-        for(int i=0; i<numbers.length; i++){
-            System.out.print(numbers[i]+",");
+    }
+
+    private static void println(int[] numbers,int i){
+        System.out.println("第"+i+"趟排序：");
+        for(int x=0; x<numbers.length; x++){
+            System.out.print(numbers[x]+",");
         }
+        System.out.println("");
     }
 }
