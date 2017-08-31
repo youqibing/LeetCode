@@ -11,7 +11,8 @@ package Array.RotateProblem;
  * Hint:
  * Could you do it in-place with O(1) extra space?
  *
- *
+ * 这个题是要求，用O(1)的额外空间，但对时间复杂度没有要求，那么我们可以先将后面的K个数搬到前面来，
+ * 之后剩下部分的就用任何一种排序算法即可，这里用的最简单的冒泡排序
  */
 public class RotateArray {
     public static void main(String args[]){
