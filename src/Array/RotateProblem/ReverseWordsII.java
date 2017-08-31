@@ -1,25 +1,22 @@
 package Array.RotateProblem;
 
 /**
- * Given an input string, reverse the string word by word. A word is defined as a sequence of non-space characters.
- * The input string does not contain leading or trailing spaces and the words are always separated by a single space.
- * For example,
- * Given s = "the sky is blue",
- * return "blue is sky the".
- * Could you do it in-place without allocating extra space?
+ * Given a string, you need to reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
  *
- * 本体的思路就是，先逐个单词交换，然后把整个字符串对换一下。这个题说的不能用额外额空间，个人感觉这个char t肯定是要用的，
- * 不然按根本没办法交换，以及，这里搞成 StringBuilder 包装一下是为了替换特定位置的字符
+ * Example 1:
+ * Input: "Let's take LeetCode contest"
+ * Output: "s'teL ekat edoCteeL tsetnoc"
+ * Note: In the string, each word is separated by single space and there will not be any extra space in the string.
  */
 public class ReverseWordsII {
     public static void main(String args[]){
-        String s = "the sky is blue";
-        StringBuilder sb =reverseWordII(s);
+        String s = "Let's take LeetCode contest";
+        StringBuilder sb =reverseWordIII(s);
 
         System.out.println(sb.toString());
     }
 
-    private static StringBuilder reverseWordII(String s){
+    private static StringBuilder reverseWordIII(String s){
         int z=0;
 
         StringBuilder sb = new StringBuilder(s);
@@ -39,14 +36,6 @@ public class ReverseWordsII {
 
         sb.substring(0, sb.length()-2);
 
-        for(int i=0,w=sb.length()-1; i<sb.length()/2; i++,w--){
-
-            char t = sb.charAt(i);
-            sb.setCharAt(i,sb.charAt(w));
-            sb.setCharAt(w,t);
-        }
-
-        return sb;
-
+        return  sb;
     }
 }
