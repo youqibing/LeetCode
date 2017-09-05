@@ -11,8 +11,12 @@ import java.util.Stack;
  * Some examples:
  * ["2", "1", "+", "3", "*"] -> ((2 + 1) * 3) -> 9
  * ["4", "13", "5", "/", "+"] -> (4 + (13 / 5)) -> 6
+ *
+ * 后缀表达式(逆波兰表达式)计算过程：建立一个栈S, 从左到右读后缀表达式，如果读到操作数就将它压入栈S中，如果读到n元运算符
+ * (即需要参数个数为n的运算符)则取出由栈顶向下的n项按操作符运算，再将运算的结果代替原栈顶的n项，压入栈S中 ;
+ * 如果后缀表达式未读完，则重复上面过程，最后输出栈顶的数值则为结束。
  */
-public class ReversePolish {
+public class CalculatSuffix {
     public static void main(String[] args){
         String[] tokens = new String[]{"2","1","+","3","*"};
         reversePolish(tokens);
