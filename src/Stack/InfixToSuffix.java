@@ -34,12 +34,12 @@ public class InfixToSuffix {
 
                 case '+':
                 case '-':
-                    if (stack.isEmpty() || stack.peek() == '(') { //stack.peek() 查看栈顶的元素，如果为'('左括号则入栈
-                        stack.push(c);
+                    if (stack.isEmpty() || stack.peek() == '(') { //stack.peek() 查看栈顶的元素，
+                        stack.push(c);  //如果为'('左括号,或者栈空了,则'+' '-'号入栈
                     } else {     //栈不为空 且 栈顶不是左括号
-                        while (!stack.isEmpty() && operators1.contains(String.valueOf(c))) {
-                            builder.append(String.valueOf(stack.pop()));  //如果栈顶为数字，不停出栈，直到栈空或者遇到数字为止
-                        }
+                        while (!stack.isEmpty() && operators1.contains(String.valueOf(stack.peek()))) {
+                            builder.append(String.valueOf(stack.pop()));
+                        }   //栈顶是符号(四种都可以)，此时又要进入符号('+' '-'号),原来的符号先要出栈，直到遇到数字了再进入'+' '-'号
                         stack.push(c);  //栈空了或者遇到数字了，'+'或者'-'两个运算符入栈
                     }
                     break;
@@ -51,35 +51,35 @@ public class InfixToSuffix {
                         stack.push(c);  //栈空 或者 遇到低级运算符'+''-' 或者 左括号'(', 高级运算符'*' '/'进栈
                     } else {
                         while (!stack.isEmpty() && operators2.contains(String.valueOf(c))) {
-                            builder.append(String.valueOf(stack.pop()));  //如果遇到的还是高级运算符'*' '/', 则出栈
-                        }
+                            builder.append(String.valueOf(stack.pop()));  //此时要进入的是高级运算符'*' '/',如果此时栈顶
+                        }                               // 也是高级运算符'*' '/', 则原栈中的高级运算符出栈(注意此时'+''-'不用动)
                         stack.push(c);
                     }
                     break;
 
 
 
-                case '(':
+                case '(':   //左括号直接进栈
                     stack.push(c);
                     break;
 
 
-                case ')':
-                    char temp = ' ';
+                case ')':   //遇到右括号，需要跟之前的左括号配对，因此需要将栈中左括号上面的元素全部出栈
+                    char temp ;
                     while (!stack.isEmpty() && (temp = stack.pop()) != '(') {
                         builder.append(String.valueOf(temp));
                     }
                     break;
 
 
-                default:
+                default:    //相当于else,也就是遇到数字就直接添加，不用进栈了
                     builder.append(c);
                     break;
             }
 
         }
 
-        if(!stack.isEmpty()){   //运算完后留在栈中的全部出栈
+        if(!stack.isEmpty()){   //上面的操作完后还留在栈中的元素直接全部出栈
             while (!stack.isEmpty()){
                 builder.append(String.valueOf(stack.pop()));
             }
