@@ -1,7 +1,7 @@
-package Array;
+package Palindromic;
 
 /**
- * Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
+ * Given a string s, find the longest Palindromic substring in s. You may assume that the maximum length of s is 1000.
  *
  * Example:
  *
@@ -20,6 +20,7 @@ package Array;
  * 元素是否相等，如果不相等或者到两端了，就停止以这个元素为中心的扩散比较,而向后移动一位为中心向两边扩散。每次比较得出的最长回文子串存在一个全局
  * 变量longest中,用于和下一次作比较,从而找出最长的子串。
  *      这里需要注意的是，我要考虑 "奇数" 和 "偶数"个字母以某个字母为中心对称两种情况 ,奇数时中间那个字母是多出来的,偶数的话中间两个字母也是对称的
+ *      另外还要注意的是,这个题要求返回的是最长 "子串"(必须连在一起)
  */
 public class LongestPalindrome {
     private static String longest="";

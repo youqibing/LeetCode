@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67edc53b-4061-4242-986c-9de3de8dd3d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Array/LongestPalindrome.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Array/Intervals/MergeIntervals.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Palindromic/TencentPalindrome.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/LongestPalindrome.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tree/BinaryTree/BTTraversal.java" afterPath="$PROJECT_DIR$/src/Tree/BinaryTree/BTTraversal.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Array/Sum/ThreeSum.java" afterPath="$PROJECT_DIR$/src/Array/TowPoint/Sum/ThreeSum.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Array/Sum/TwoSum.java" afterPath="$PROJECT_DIR$/src/Array/TowPoint/Sum/TwoSum.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Array/Sum/TwoSumII.java" afterPath="$PROJECT_DIR$/src/Array/TowPoint/Sum/TwoSumII.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Array/LongestPalindrome.java" afterPath="$PROJECT_DIR$/src/Palindromic/LongestPalindrome.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,11 +65,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LongestPalindrome.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Array/LongestPalindrome.java">
+      <file leaf-file-name="LongestPalindrome.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Palindromic/LongestPalindrome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="30" />
+            <state relative-caret-position="69">
+              <caret line="3" column="59" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TencentPalindrome.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Palindromic/TencentPalindrome.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MergeIntervals.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Array/Intervals/MergeIntervals.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -106,21 +125,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BTNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tree/BinaryTree/BTNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding>
-                <element signature="e#169#170#0" expanded="true" />
-                <element signature="e#207#208#0" expanded="true" />
-                <element signature="e#639#640#0" expanded="true" />
-                <element signature="e#667#668#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -146,8 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/TwoThreeFour_Sum/TwoSum.java" />
-        <option value="$PROJECT_DIR$/src/TwoThreeFour_Sum/TowSumII.java" />
         <option value="$PROJECT_DIR$/src/TwoThreeFour_Sum/ThreeSum/TowSumII.java" />
         <option value="$PROJECT_DIR$/src/TwoThreeFour_Sum/ThreeSum/TwoSum.java" />
         <option value="$PROJECT_DIR$/src/TwoThreeFour_Sum/TowSum/TwoSum.java" />
@@ -196,6 +198,9 @@
         <option value="$PROJECT_DIR$/src/Hash/Deduplication.java" />
         <option value="$PROJECT_DIR$/src/Tree/BinaryTree/BTTraversal.java" />
         <option value="$PROJECT_DIR$/src/Array/LongestPalindrome.java" />
+        <option value="$PROJECT_DIR$/src/Array/Palindromic/LongestPalindrome.java" />
+        <option value="$PROJECT_DIR$/src/Array/Palindromic/TencentPalindrome.java" />
+        <option value="$PROJECT_DIR$/src/Palindromic/TencentPalindrome.java" />
       </list>
     </option>
   </component>
@@ -255,6 +260,13 @@
               <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Array" type="462c0819:PsiDirectoryNode" />
+              <item name="Intervals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Array" type="462c0819:PsiDirectoryNode" />
               <item name="RotateProblem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -291,6 +303,12 @@
               <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Hash" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Palindromic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
@@ -334,7 +352,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LongestPalindrome">
+  <component name="RunManager" selected="Application.TencentPalindrome">
     <configuration name="CalculatSuffix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -343,25 +361,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="Stack.CalculatSuffix" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="LeetCode" />
-      <envs />
-    </configuration>
-    <configuration name="Deduplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Hash.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Hash.Deduplication" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -395,11 +394,11 @@
     <configuration name="LongestPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Array.*" />
+          <option name="PATTERN" value="Palindromic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Array.LongestPalindrome" />
+      <option name="MAIN_CLASS_NAME" value="Palindromic.LongestPalindrome" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -419,6 +418,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="Array.TowPoint.RemoveElement.RmElementSortedII" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="LeetCode" />
+      <envs />
+    </configuration>
+    <configuration name="TencentPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Palindromic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Palindromic.TencentPalindrome" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -531,19 +549,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Deduplication" />
-      <item index="1" class="java.lang.String" itemvalue="Application.CalculatSuffix" />
-      <item index="2" class="java.lang.String" itemvalue="Application.InfixToSuffix" />
-      <item index="3" class="java.lang.String" itemvalue="Application.TestStack" />
-      <item index="4" class="java.lang.String" itemvalue="Application.LongestPalindrome" />
+      <item index="0" class="java.lang.String" itemvalue="Application.CalculatSuffix" />
+      <item index="1" class="java.lang.String" itemvalue="Application.InfixToSuffix" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TestStack" />
+      <item index="3" class="java.lang.String" itemvalue="Application.LongestPalindrome" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TencentPalindrome" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.LongestPalindrome" />
-        <item index="1" class="java.lang.String" itemvalue="Application.InfixToSuffix" />
-        <item index="2" class="java.lang.String" itemvalue="Application.TestStack" />
-        <item index="3" class="java.lang.String" itemvalue="Application.CalculatSuffix" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Deduplication" />
+        <item index="0" class="java.lang.String" itemvalue="Application.TencentPalindrome" />
+        <item index="1" class="java.lang.String" itemvalue="Application.LongestPalindrome" />
+        <item index="2" class="java.lang.String" itemvalue="Application.InfixToSuffix" />
+        <item index="3" class="java.lang.String" itemvalue="Application.TestStack" />
+        <item index="4" class="java.lang.String" itemvalue="Application.CalculatSuffix" />
       </list>
     </recent_temporary>
   </component>
@@ -587,6 +605,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20922747" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -598,7 +617,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -633,26 +651,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11040">
-          <caret line="480" column="29" lean-forward="false" selection-start-line="480" selection-start-column="29" selection-end-line="480" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Array/TowPoint/RemoveElement/RmElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Array/TowPoint/Sum/TwoSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -1030,10 +1033,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Array/LongestPalindrome.java">
+    <entry file="file://$PROJECT_DIR$/src/Palindromic/LongestPalindrome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="30" />
+        <state relative-caret-position="69">
+          <caret line="3" column="59" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Array/Intervals/MergeIntervals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Palindromic/TencentPalindrome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="30" />
           <folding />
         </state>
       </provider>
