@@ -33,7 +33,7 @@ public class BTTraversal {
         return root;
     }
 
-    /**构造树,先从创建叶子节点开始**/
+    /*构造树,先从创建叶子节点开始*/
     private static BTNode init(){
         BTNode n3 = new BTNode(3);
         BTNode n5 = new BTNode(5);
@@ -44,13 +44,13 @@ public class BTTraversal {
         return n1; // root
     }
 
-    /**访问节点**/
+    /*访问节点*/
     private static int getNode(BTNode node){
         System.out.print((int) node.getParent() + " ");
         return (int) node.getParent();
     }
 
-    /**递归前序遍历**/
+    /*递归前序遍历*/
     private static void preOrder(BTNode node){
         if(node != null){
             getNode(node);
@@ -59,14 +59,14 @@ public class BTTraversal {
         }
     }
 
-    /**递归中序遍历**/
+    /*递归中序遍历*/
     private static void inOrder(BTNode node){
         inOrder(node.getLeft());
         getNode(node);
         inOrder(node.getRight());
     }
 
-    /**递归后续遍历**/
+    /*递归后续遍历*/
     private static void postorder(BTNode node){
         inOrder(node.getLeft());
         inOrder(node.getRight());
@@ -74,7 +74,7 @@ public class BTTraversal {
     }
 
 
-    /**非递归实现前序遍历**/
+    /*非递归实现前序遍历*/
     private static void iterativePreorder(BTNode node){
         Stack<BTNode> stack = new Stack<>();
         if(node != null){
@@ -94,7 +94,7 @@ public class BTTraversal {
         }
     }
 
-    /**非递归实现中序遍历**/
+    /*非递归实现中序遍历*/
     private static void iterativeInorder(BTNode node){
         Stack<BTNode> stack = new Stack<>();
 
@@ -119,7 +119,7 @@ public class BTTraversal {
     }
 
 
-    /**
+    /*
      * 非递归实现后序遍历，由于常规的实现方法比较麻烦，这里用了一种比较简便的方法：
      * 我们将前序遍历中"右孩子先入栈，做孩子后入栈"的顺序翻过来，即让左孩子先入栈，右孩子后入栈，
      * 得到的栈序列恰好为 后序遍历的逆序列，此时只要再用一个栈保存原栈的出栈序列(反过来)就行
@@ -153,7 +153,7 @@ public class BTTraversal {
     }
 
 
-    /**
+    /*
      * 非递归实现后序遍历 的常规方法
      * @param node
      */
