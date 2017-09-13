@@ -40,7 +40,7 @@ public class MaxOddApproximately {
         int count = 0;
 
 
-        /**求一个数因此(不包括1和自己)的标准算法**/
+        /**求一个数因子(不包括1和自己)的标准算法**/
         if(n == 0){
             return;
         } else if(n == 1 || n == 2){
