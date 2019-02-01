@@ -36,33 +36,45 @@ public class MergeIntervals {
             return ;
         }
 
-        Collections.sort(intervals, new IntervalsComparator());
+        //Collections.sort(intervals, new IntervalsComparator());
+        intervals.sort(new IntervalsComparator());
 
         List<Interval> result = new ArrayList<>();
-        Interval last = intervals.get(0);
+        Interval pre = intervals.get(0);
 
         for(int i=1; i<intervals.size(); i++){  //注意i从1开始
             Interval curt = intervals.get(i);
-            if(curt.start <= last.end){   //前一个(last)的end值改变,相当于把两个区间合并,此时last还是0,curr循环一次变为2，相当于第0个和
-                last.end = Math.max(last.end, curt.end); //第2个比较,此时直接执行下面的else并将last(合并区间后的第一个)添加到结果返回值中
+            if(curt.start <= pre.end){   //前一个(pre)的end值改变,相当于把两个区间合并,此时last还是0,curr循环一次变为2，相当于第0个和
+                pre.end = Math.max(pre.end, curt.end); //第2个比较,此时直接执行下面的else并将last(合并区间后的第一个)添加到结果返回值中
             }else {
-                result.add(last);
-                last = curt;    //指针后移一位,比较2和3
+                result.add(pre);
+                pre = curt;    //指针后移一位,比较2和3
             }
-            System.out.print("["+last.start+","+last.end+"]");
+            System.out.print("["+pre.start+","+pre.end+"]");
         }
 
-        result.add(last);
+        result.add(pre);
     }
+
 
 
     static class IntervalsComparator implements Comparator<Interval>{
 
         @Override
         public int compare(Interval a, Interval b) {
-            return a.start - b.start;   //按照Interval类中 start 的升序排列
+            /*
+            if(a.start < b.start){
+                return -1;
+            }else if(a.start > b.start){
+                return 1;
+            }else {
+                return 0;
+            }
+            */
+            return a.start - b.start;   //源码默认 a - b > 0 ; a - b < 0 ; a - b = 0  满足这三个条件为升序
         }
     }
+
 
 
 
@@ -76,5 +88,6 @@ public class MergeIntervals {
       Interval(int s, int e) {
           start = s; end = e;
       }
+
     }
 }

@@ -67,9 +67,9 @@ public class BTTraversal {
     }
 
     /*递归后续遍历*/
-    private static void postorder(BTNode node){
-        inOrder(node.getLeft());
-        inOrder(node.getRight());
+    private static void postOrder(BTNode node){
+        postOrder(node.getLeft());
+        postOrder(node.getRight());
         getNode(node);
     }
 
@@ -121,7 +121,7 @@ public class BTTraversal {
 
     /*
      * 非递归实现后序遍历，由于常规的实现方法比较麻烦，这里用了一种比较简便的方法：
-     * 我们将前序遍历中"右孩子先入栈，做孩子后入栈"的顺序翻过来，即让左孩子先入栈，右孩子后入栈，
+     * 我们将前序遍历中"右孩子先入栈，左孩子后入栈"的顺序翻过来，即让左孩子先入栈，右孩子后入栈，
      * 得到的栈序列恰好为 后序遍历的逆序列，此时只要再用一个栈保存原栈的出栈序列(反过来)就行
      * @param node
      */
@@ -134,7 +134,7 @@ public class BTTraversal {
 
             while(!stack1.empty()){
                 node = stack1.pop();     //父母节点出栈 (这里得出的是后序遍历的逆序列)
-                stack2.push(node);      //用另一个栈来保存原栈的出栈序列，极为正序列
+                stack2.push(node);      //用另一个栈来保存原栈的出栈序列，即为正序列
 
                 if(node.getLeft() != null){
                     stack1.push(node.getLeft()); //这里走了捷径，让左孩子先入栈
@@ -168,7 +168,7 @@ public class BTTraversal {
                 node = node.getLeft();
             }   //该循环结束的时,node.getLeft() = null,即此时node表示树最左端叶子
 
-            //当前结点无右子节点(叶子节点)或者右子节点已经出栈(父母节点/非叶子节点,右孩子是后出栈的，故此时做孩子也已经出栈)
+            //当前结点无右子节点(叶子节点)或者右子节点已经出栈(父母节点/非叶子节点,右孩子是后出栈的，故此时左孩子也已经出栈)
             while(node != null && (node.getRight() == null || node.getRight() == n)){
                 getNode(node);
                 n = node;   //记录上一个已经出栈的结点(用于判断非叶子节点的右孩子是否已出栈，如果是，那么本次输出的就是非叶子节点)

@@ -1,6 +1,5 @@
 package Tree.BinaryTree;
 
-import sun.reflect.generics.tree.Tree;
 
 public class BTNode<T> {
     private T parent;

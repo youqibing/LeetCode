@@ -17,7 +17,7 @@ public class Deduplication {
         Map<Integer,Integer> map = new LinkedHashMap<>();
 
         for(int num:nums){
-            map.put(num,map.getOrDefault(num,0)+1);     //这里去掉+1
+            map.put(num, map.getOrDefault(num,0)+1);     //这里去掉+1
         }
         for(Map.Entry<Integer,Integer> entry:map.entrySet()){   //HashMap遍历，重要！！！
             if(entry.getValue() == 1){          //这里改为 ==0，则最后输出的结果为不重复数据即1,2,3,4,5,6,8,9

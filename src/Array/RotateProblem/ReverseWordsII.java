@@ -1,41 +1,52 @@
 package Array.RotateProblem;
 
 /**
- * Given a string, you need to reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
+ * Given an input string, reverse the string word by word. A word is defined as a sequence of non-space characters.
+ * The input string does not contain leading or trailing spaces and the words are always separated by a single space.
+ * For example,
+ * Given s = "the sky is blue",
+ * return "blue is sky the".
+ * Could you do it in-place without allocating extra space?
  *
- * Example 1:
- * Input: "Let's take LeetCode contest"
- * Output: "s'teL ekat edoCteeL tsetnoc"
- * Note: In the string, each word is separated by single space and there will not be any extra space in the string.
+ * 本题的思路就是，先逐个单词交换，然后把整个字符串对换一下。这个题说的不能用额外额空间，个人感觉这个char t肯定是要用的，
+ * 不然按根本没办法交换，以及，这里搞成 StringBuilder 包装一下是为了替换特定位置的字符
  */
 public class ReverseWordsII {
     public static void main(String args[]){
-        String s = "Let's take LeetCode contest";
-        StringBuilder sb =reverseWordIII(s);
+        String s = "the sky is blue";
+        StringBuilder sb =reverseWordII(s);
 
         System.out.println(sb.toString());
     }
 
-    private static StringBuilder reverseWordIII(String s){
-        int z=0;
+
+    private static StringBuilder reverseWordII(String s){
 
         StringBuilder sb = new StringBuilder(s);
-        sb.append(" "); //给字符串后面加一个空格，用于统一检测单词
+        sb.append(" ");
 
-        for(int i=0; i<sb.length();i++){
+        int z = 0;
+
+        for(int i=0; i<sb.length(); i++){
             if(sb.charAt(i) == ' '){
-
-                for(int j=z,w=i-1; (j-z)<(i-z)/2; j++,w--){
-                    char t = sb.charAt(j);
-                    sb.setCharAt(j,sb.charAt(w));
-                    sb.setCharAt(w,t);
+                for(int l=z, r=i-1; l<=(l+r)/2; l++, r--){
+                    char t = sb.charAt(l);
+                    sb.setCharAt(l,sb.charAt(r));
+                    sb.setCharAt(r,t);
                 }
                 z=i+1;
             }
         }
 
-        sb.substring(0, sb.length()-2);
+        sb.substring(0,sb.length()-2);
 
-        return  sb;
+        for(int i=0, j=sb.length()-1; i<sb.length()/2; i++, j--){
+            char t = sb.charAt(i);
+            sb.setCharAt(i, sb.charAt(j));
+            sb.setCharAt(j,t);
+        }
+
+        return sb;
+
     }
 }

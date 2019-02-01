@@ -19,24 +19,27 @@ public class RmElementSortedII {
         rmElementSortedII(nums);
     }
 
+
     private static void rmElementSortedII(int[] numbers){
-        int j=0,z=0,x=0;
 
-        for(int i=0; i<numbers.length; i++){
-            if(i!=0 && numbers[i] == numbers[i-1]){
+        int j=1 ;
+        int count = 0;
+        for(int i = 1; i<numbers.length; i++){
 
-                numbers[j] = numbers[i];
-                z++;
-
-                if(z >=2 ){
-                    z =0;
-                    continue;
+            if(numbers[i] == numbers[i-1]){
+                count++;
+                if(count <2 ) {
+                    numbers[j] = numbers[i];
+                    j++;
                 }
+            }else {
+                numbers[j] = numbers[i];
+                j++;
+                count = 0;
             }
-            numbers[j++] = numbers[i];
-            x++;
         }
-        for(int i=0;i< x; i++){
+
+        for(int i=0;i<j; i++){
             System.out.print(numbers[i]+",");
         }
     }

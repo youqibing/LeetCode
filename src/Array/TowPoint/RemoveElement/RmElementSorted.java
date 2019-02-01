@@ -25,21 +25,19 @@ public class RmElementSorted {
         }
     }
 
-    private static Result rmElementSorted(int[] numbers){
-        int z=0,j=0;
-        for(int i=0; i<numbers.length; i++){
 
-            if(i!=0 && numbers[i] == numbers[i-1]){
-                numbers[j] = numbers[i];    //在这一步的时候j已经加1了
-                continue;
+    private static Result rmElementSorted(int[] numbers){
+
+        int j = 1;
+        for(int i=1; i<numbers.length-1; i++){
+            if(numbers[i] != numbers[i-1]){
+                numbers[j] = numbers[i];
+                j++;
             }
-            numbers[j++] = numbers[i];  //注意这里是先保存再j+1,设想i从1到2的过程，实际上j等于1的位置发生了一次值的覆盖
-            z++;    //用来保存数删除元素后数组的长度(因为每当重复就continue了，不执行这一句)
         }
 
-        Result res = new Result(numbers,z);
-        return res;
-
+        Result res = new Result(numbers, j);
+        return  res;
     }
 
     private static class Result{

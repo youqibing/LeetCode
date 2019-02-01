@@ -1,7 +1,5 @@
 package Array.HalfSerach;
 
-import java.util.List;
-
 /**
  * Given an array of integers sorted in ascending order, find the starting and ending position of a given target value.
  *
@@ -20,9 +18,9 @@ import java.util.List;
  */
 public class SearchRange {
     public static void main(String[] args){
-        int[] nums = {5, 7, 7, 8, 9, 10 };
+        int[] nums = {3, 4, 5, 6, 7, 7, 7, 7, 8, 9, 10, 11, 14};
         int[] res = {-1,-1};
-        int traget = 9;
+        int traget = 7;
 
         res[0] =left(nums,traget);
         res[1] =right(nums,traget);
@@ -31,41 +29,42 @@ public class SearchRange {
     }
 
     private static int left(int[] nums, int traget){
-        int st =0, ed =nums.length-1, mid;
+        int l = 0, r = nums.length - 1;
+        int mid ;
 
-        while(st < ed){     //确定左边界st
-            mid = st + (ed - st)/2;     //不用 mid = (st + ed) / 2 是因为后面的情况当st+ed很大时可能会产生溢出
-            if(nums[mid] <traget){  //保证st不会越过任何等于target的数
-                st = mid +1;    //
-            }else {         //大于等于
-                ed = mid ;  //数组(升序)mid下标的数大于等于 traget, 那后面的数就不用比较了
+        while(l < r){
+            mid = l + ((r - l)>>1);
+            if(nums[mid] < traget){
+                l = mid + 1;
+            }else {
+                r = mid;    //这里没有-1是因为有 nums[mid] = traget 这种情况
             }
         }
 
-        if(nums[st] != traget){
-            return -1;     //不存在
+        if(nums[l] != traget){
+            return -1;
         }
 
-        return st;
+        return l;
     }
 
-    private static int right(int[] nums, int traget){
-        int st =0, ed =nums.length-1, mid;
+    private static int right(int[] nums, int target){
+        int l = 0, r = nums.length - 1;
+        int mid;
 
-        while(st < ed){     //确定右边界ed
-            mid = (st + (ed - st)/2) +1;  //这里用+1是为了让mid偏向右边
-            if(nums[mid] >traget){
-                ed = mid -1;
-            }else {         //小于等于
-                st = mid ;   //因为st已经确定了，所以这里实际上不会出现比target小的数了
+        while(l < r){
+            mid = l + ((r - l)>>1) + 1;
+            if(nums[mid] > target){
+                r = mid -1;
+            }else {
+                l = mid;
             }
         }
 
-        if(nums[ed] != traget){
-            return -1;     //不存在
+        if(nums[r] != target){
+            return -1;
         }
 
-        return ed;
+        return r;
     }
-
 }
